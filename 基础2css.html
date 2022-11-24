@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>基础2css</title>
+    <style>
+        p {
+            color: #7C1BC4;
+            /*字体大小*/
+            font-size: 20px;
+        }
+
+        /*类选择器*/
+        .red {
+            color: red;
+        }
+
+        .gerrn {
+            color: green;
+        }
+
+        .prink {
+            color: paleturquoise;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        .div {
+            /*背景颜色*/
+            background-color: red;
+        }
+
+        .div2 {
+            background-color: green;
+        }
+
+        .div3 {
+            background-color: red;
+        }
+
+        .yt {
+            background-color: darksalmon;
+        }
+
+        .font35 {
+            font-size: 25px;
+        }
+
+        /*ID选择器使用# 开头 只能被调用一次*/
+        #bule {
+            color: #741C9A;
+        }
+
+        /*通配符选择器，使用*定义表示选取页面中的所有的元素*/
+
+        .jc {
+            /*字体加粗
+bold  加粗
+bolder 特粗体
+lighter  细体
+normal  默认不加粗 等同于400
+bold   定义粗体 等同于700
+font-style: italic 斜体 normal 默认
+font-weight: bold; 等价于  font-weight: 700; 后面不要跟单位*/
+        }
+
+        .p {
+            /*字体样式*/
+            font-family: '宋体';
+            font-size: 17px;
+            /*标题字体要单独设置*/
+        }
+
+        .zh {
+            font-size: 20px;
+            font-family: '宋体';
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        /*复合属性 顺序不能改变 style weight size/line-height  family  */
+        .fuhe {
+            font: italic 800 16px '宋体';
+            text-align: center;
+        }
+
+        .xiahuaxian {
+            text-decoration: underline;
+            /*下划线*/
+
+        }
+
+        .shaghuaxian {
+            text-decoration: overline;
+            /*上划线*/
+        }
+
+        .shanchuxian {
+            text-decoration: line-through;
+            /*删除线*/
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .shouhangsuojin {
+            text-indent: 2em;
+            /*2em表示缩进两个文字大小的距离*/
+        }
+
+        .hangjianju {
+            line-height: 50px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <p>看我变色了吗</p>
+    <ul>
+        <li class="red">杜牧司勋字牧之，清秋一首杜秋诗。</li>
+        <li class="red">前身应是梁江总，名总还曾字总持。</li>
+        <li class="gerrn">心铁已从干镆利，鬓丝休叹雪霜垂。</li>
+        <li class="prink">汉江远吊西江水，羊祜韦丹尽有碑。</li>
+    </ul>
+    <div class="div box font35">第一个盒子</div>
+    <div class="div2 box font35">第二个盒子</div>
+    <div class="div3 box font35">第三个盒子</div>
+    <div class="yt font35">调用多类名中间要有空格隔开</div>
+
+    <span id="bule">id选择器只能用一次</span>
+    <p class="fuhe">霁雪</p>
+
+    <p class="xt">戎昱〔唐代〕</p>
+
+    <p class="p">风卷寒云暮雪晴，江烟洗尽柳条轻。</p>
+    <p class="jc">檐前数片无人扫，又得书窗一夜明。</p>
+
+    <p>好事近·雨后晓寒轻</p>
+
+    <p class="shouhangsuojin">魏夫人〔宋代〕</p>
+
+    <p class="shaghuaxian">雨后晓寒轻，花外早莺啼歇。</p>
+    <p class="shanchuxian">愁听隔溪残漏，正一声凄咽。</p>
+    <p class="xiahuaxian">不堪西望去程赊，离肠万回结。</p>
+    <p class="hangjianju">不似海棠阴下，按《凉州》时节。</p>
+    <a href="#">取消a的默认下划线</a>
+    <!-- 文本对齐方式
+text-align:  center  left right
+装饰文本
+text-decoration: none(没有)  underline(下划线)  overline(上划线)  line-through(删除线)
+首行缩进
+text-indent: 40px;
+行间距  行高
+line-height: 26px;
+-->
+
+</body>
+
+</html>
